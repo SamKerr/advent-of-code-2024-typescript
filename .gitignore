@@ -1,3 +1,4 @@
-/.idea/
-*.xml
-advent-of-code-2024-typescript.iml
+package.json
+package-lock.json
+/node_modules/
+.idea/workspace.xml
