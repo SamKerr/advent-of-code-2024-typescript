@@ -1,3 +1,5 @@
-/.idea/
+/node_modules/
+.idea/workspace.xml
 *.xml
-advent-of-code-2024-typescript.iml
+*.iml
+.idea/

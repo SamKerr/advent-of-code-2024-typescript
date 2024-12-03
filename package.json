@@ -1,0 +1,17 @@
+{
+  "name": "advent-of-code-2024-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "operation-save-christmas": "tsx src/day$npm_config_path/solution.ts"
+  },
+  "keywords": [],
+  "author": "Samuel Kerr",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
