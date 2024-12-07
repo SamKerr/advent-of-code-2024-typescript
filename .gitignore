@@ -1,5 +1,6 @@
 /node_modules/
-.idea/workspace.xml
 *.xml
 *.iml
 .idea/
+.vscode/
+out/
