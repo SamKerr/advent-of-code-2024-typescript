@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-class Solution {
+class CorruptedMemoryInterpreter {
     private input: string;
     private sumPattern = /mul\((\d{1,3}),(\d{1,3})\)/g;
     private doPattern = /do\(\)/g;
@@ -47,6 +47,6 @@ class Solution {
     }
 }
 
-const solution = new Solution();
+const solution = new CorruptedMemoryInterpreter();
 console.log(`Solution 1: ${solution.part1()}`);
 console.log(`Solution 2: ${solution.part2()}`);

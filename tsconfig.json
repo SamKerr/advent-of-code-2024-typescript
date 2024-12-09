@@ -1,8 +1,13 @@
 {
     "compilerOptions": {
-        "target": "ES2015",
-        "module": "CommonJS",
+        "target": "es2022",
+        "module": "ES2022",
         "outDir": "out",
-        "sourceMap": true
+        "sourceMap": true,
+        "baseUrl": "./",
+        "paths": {
+            "$src/*": ["src/*"],
+            "$secrets/*": ["secrets/*"]
+        }
     }
 }

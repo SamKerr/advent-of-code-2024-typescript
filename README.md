@@ -1,10 +1,12 @@
 # Advent of Code 2024 - Typescript
 
 ![Static Badge](https://img.shields.io/badge/language-typescript-blue)
-
-![Static Badge](https://img.shields.io/badge/days_completed-3-green)
-
+![Static Badge](https://img.shields.io/badge/days_completed-4-green)
 ![Static Badge](https://img.shields.io/badge/christmas_saved-false-red)
+
+### Summary
+
+The main goal of this repo is repo is to have fun, explore typescript and solve problems.
 
 ### Getting Started
 
