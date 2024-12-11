@@ -104,8 +104,7 @@ class WordSearchSolver {
     }
 }
 
-const INPUT_URI = 'https://adventofcode.com/2024/day/4/input';
-const input = await requestInput(INPUT_URI);
+const input = await requestInput(4);
 const solver = new WordSearchSolver(input);
 console.log(solver.part1());
 console.log(solver.part2());
