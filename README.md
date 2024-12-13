@@ -6,7 +6,7 @@
 
 ### Summary
 
-The main goal of this repo is repo is to have fun, explore typescript and solve problems.
+The main goal of this repo is to have fun, explore typescript and solve problems.
 
 ### Getting Started
 
