@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import { requestInput } from '$src/utils/http';
 
 class CorruptedMemoryInterpreter {
     private input: string;
@@ -8,7 +8,11 @@ class CorruptedMemoryInterpreter {
     private allOpsPattern = /mul\((\d{1,3}),(\d{1,3})\)|do\(\)|don't\(\)/g;
 
     constructor() {
-        this.input = fs.readFileSync('src/day3/input.txt', 'utf8');
+        this.init();
+    }
+
+    async init() {
+        this.input = await requestInput(3);
     }
 
     part1(): number {

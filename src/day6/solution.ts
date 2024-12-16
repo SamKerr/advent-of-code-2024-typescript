@@ -82,7 +82,7 @@ function simulateGuardMovement({
         }
     };
 
-    const simulateLookStepLog = ([nextY, nextX]): Boolean => {
+    const stepForward = ([nextY, nextX]): Boolean => {
         if (isOutOfBounds([nextY, nextX])) {
             return true;
         } else if (isObstacle([nextY, nextX])) {
@@ -105,19 +105,19 @@ function simulateGuardMovement({
     while (isInBounds([currY, currX])) {
         switch (currDirection) {
             case 'UP':
-                isFinished = simulateLookStepLog([currY - 1, currX]);
+                isFinished = stepForward([currY - 1, currX]);
                 if (isFinished) return visitedCells;
                 break;
             case 'RIGHT':
-                isFinished = simulateLookStepLog([currY, currX + 1]);
+                isFinished = stepForward([currY, currX + 1]);
                 if (isFinished) return visitedCells;
                 break;
             case 'DOWN':
-                isFinished = simulateLookStepLog([currY + 1, currX]);
+                isFinished = stepForward([currY + 1, currX]);
                 if (isFinished) return visitedCells;
                 break;
             case 'LEFT':
-                isFinished = simulateLookStepLog([currY, currX - 1]);
+                isFinished = stepForward([currY, currX - 1]);
                 if (isFinished) return visitedCells;
                 break;
         }

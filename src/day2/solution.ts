@@ -1,4 +1,4 @@
-import * as fs from 'node:fs';
+import { requestInput } from '$src/utils/http';
 
 const NEW_LINE = '\n';
 
@@ -80,6 +80,6 @@ function solution2(input: string): number {
     );
 }
 
-const input = fs.readFileSync('./src/day2/input.txt', 'utf8');
-console.log(solution1(input));
-console.log(solution2(input));
+const rawInput = await requestInput(8);
+console.log(solution1(rawInput));
+console.log(solution2(rawInput));
