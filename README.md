@@ -1,7 +1,7 @@
 # Advent of Code 2024 - Typescript
 
 ![Static Badge](https://img.shields.io/badge/language-typescript-blue)
-![Static Badge](https://img.shields.io/badge/days_completed-9-green)
+![Static Badge](https://img.shields.io/badge/days_completed-10-green)
 ![Static Badge](https://img.shields.io/badge/christmas_saved-false-red)
 
 ### Summary
