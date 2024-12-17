@@ -39,10 +39,7 @@ function solver(input: string, isPart1: boolean): number {
     let counter = 0;
     for (let y = 0; y < grid.length; y++) {
         for (let x = 0; x < grid[0].length; x++) {
-            let v = countTrailheads(grid, y, x, 0, new Set(), isPart1);
-            if (v > 0) {
-                counter += v;
-            }
+            counter += countTrailheads(grid, y, x, 0, new Set(), isPart1);
         }
     }
 
