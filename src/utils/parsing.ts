@@ -1,5 +1,5 @@
 export function extractNumbers(input: string): number {
-    const regex = /\d+/g; // Matches sequences of digits
+    const regex = /-?\d+/g; // Matches sequences of digits, including optional leading "-"
     const matches = input.match(regex); // Find all matches
 
     if (!matches) {
