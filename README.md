@@ -16,7 +16,7 @@ Examples of the problems I had to solve:
 - Simulating a robot pushing boxes around a crowded warehouse
 - Maze solving with variant rules, like wall-hoping 
 - Simulating a CPU executing an assembly program and then reverse engineering the program to find which inputs give special outputs
-- Simulating a chaotic process that constantly produces a binary image, then finding at what point in the process a-somewhat exact picture of a christmas tree will appear. 
+- Simulating a chaotic process that produces an evolving binary image on each iteration, then finding at what point in the process a-somewhat precise picture of a christmas tree will first appear 
 - Simulating an electronic circuit then debugging it to re-wire it
 
 ### Getting Started
