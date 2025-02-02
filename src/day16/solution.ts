@@ -1,24 +1,21 @@
+import {
+    Direction,
+    directionNameToVec,
+    directions,
+    END,
+    START,
+    WALL,
+} from '$src/lib/ClassicalAlgorithms/GraphAlgortihms/Constants';
 import { requestInput } from '$src/utils/http';
-import { PriorityQueue } from './priorityQueue';
+import { PriorityQueue } from '../lib/DataStructures/PriorityQueue';
 
-const START = 'S';
-const END = 'E';
-const WALL = '#';
-
-type Dir = string;
 const directionToCost = {
     UP: { LEFT: 1000, RIGHT: 1000, DOWN: 2000, UP: 0 },
     LEFT: { UP: 1000, RIGHT: 2000, DOWN: 1000, LEFT: 0 },
     DOWN: { LEFT: 1000, RIGHT: 1000, UP: 2000, DOWN: 0 },
     RIGHT: { LEFT: 2000, UP: 1000, DOWN: 1000, RIGHT: 0 },
 };
-const directionNames = ['UP', 'RIGHT', 'DOWN', 'LEFT'];
-const directionNameToVec = {
-    UP: [0, -1],
-    RIGHT: [1, 0],
-    DOWN: [0, 1],
-    LEFT: [-1, 0],
-};
+
 const directionToIndex = {
     UP: 0,
     RIGHT: 1,
@@ -64,7 +61,7 @@ function solver(input: string, isPart1: boolean): number {
 
     type State = {
         pos: number[];
-        dir: Dir;
+        dir: Direction;
         path: number[][];
     };
     const initialState: State = {
@@ -73,10 +70,6 @@ function solver(input: string, isPart1: boolean): number {
         path: [startPos],
     };
     const initialPoints = 0;
-
-    // ##################################################
-    // use dijkstra's algorithm to find the shortest path
-    // ##################################################
 
     // USED ONLY FOR PART 2
     // key = `${x},${y}`
@@ -127,7 +120,7 @@ function solver(input: string, isPart1: boolean): number {
         }
 
         // try all states reachable from current state
-        for (const newDirection of directionNames) {
+        for (const newDirection of Object.values(directions)) {
             const pointsForTurning = directionToCost[dir][newDirection];
             const pointsForStepping = 1;
             const newPoints = points + pointsForTurning + pointsForStepping;

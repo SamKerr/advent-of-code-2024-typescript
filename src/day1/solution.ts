@@ -1,11 +1,10 @@
 import * as assert from 'assert';
 import { requestInput } from '$src/utils/http';
 
-const NEW_LINE = '\n';
 
 function parseInput(input: string): [number[], number[]] {
     const [left, right] = input
-        .split(NEW_LINE)
+        .split('\n')
         .filter((line) => line.length > 0)
         .reduce<number[][]>(
             (acc, line) => {

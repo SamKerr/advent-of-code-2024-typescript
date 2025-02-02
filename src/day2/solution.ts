@@ -1,13 +1,11 @@
 import { requestInput } from '$src/utils/http';
 
-const NEW_LINE = '\n';
-
 type Level = number[];
 type Report = Level[];
 
 function parseReport(input: string): Report {
     return input
-        .split(NEW_LINE)
+        .split('\n')
         .filter((line) => line.length > 0)
         .map((line) => line.split(' ').map(Number));
 }

@@ -5,7 +5,6 @@ const SPACE = '.';
 const BOX = 'O';
 const WALL = '#';
 
-// PART 2
 const LEFT_BOX = '[';
 const RIGHT_BOX = ']';
 
@@ -13,7 +12,7 @@ const UP = '^';
 const RIGHT = '>';
 const DOWN = 'v';
 const LEFT = '<';
-// robot exits, grid exists, commands exist, lets simulate!
+
 const commandToDir = {
     [UP]: [0, -1],
     [RIGHT]: [1, 0],
@@ -21,17 +20,7 @@ const commandToDir = {
     [LEFT]: [-1, 0],
 };
 
-// extensions, how to cover the common cases faster
-// does it work for extremely large datasets
-// for each line, sub-sample down the points on the line
-// for each line
-// find the points unique to that line
-// order them by distance from centre of bounding box of all verticies
-// put label in either top left, top right, bottom left, bottom right
-// label should not cover another line, label is 50px tall and 100px wide -> process the screen into buckets of 25x25, check all buckets for a given label for fast filtering
-
 function simulateRobotMovement(grid, currPos, dir, command): number[] {
-    // check if the square robot is trying to move to is free, it it is, return true
     const [currX, currY] = currPos;
     const targetX = currX + dir[0];
     const targetY = currY + dir[1];
@@ -65,7 +54,6 @@ function simulateRobotMovement(grid, currPos, dir, command): number[] {
 }
 
 function simulateRobotMovementPart2(grid, currPos, dir, command): number[] {
-    // check if the square robot is trying to move to is free, it it is, return true
     const [currX, currY] = currPos;
     const targetX = currX + dir[0];
     const targetY = currY + dir[1];
@@ -265,13 +253,6 @@ function part2(input: string): number {
     }
 
     for (const [n, command] of commands.entries()) {
-        // display out state
-        // console.log('###########################');
-        // console.log(`n:${n}, command:${command}`);
-        // console.log('###########################');
-        // for (const row of grid) {
-        //     console.log(row.join(''));
-        // }
         let dir = commandToDir[command];
         let [newX, newY] = simulateRobotMovementPart2(
             grid,
