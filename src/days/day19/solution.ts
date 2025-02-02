@@ -1,4 +1,4 @@
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 
 function canConstruct(target: string, S: string[]): boolean {
     if (target.length === 0) {

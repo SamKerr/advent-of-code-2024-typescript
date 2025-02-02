@@ -1,7 +1,7 @@
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 import {
     extractNumbers,
-} from '$src/utils/parsing';
+} from '$src/lib/parsing';
 
 type LogicGate = (a: boolean, b: boolean) => boolean;
 type CircuitComponent = {

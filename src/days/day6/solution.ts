@@ -1,4 +1,4 @@
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 
 type Cell = '.' | '#' | '^' | '>' | '<' | 'v' | 'O';
 type Direction = 'UP' | 'RIGHT' | 'DOWN' | 'LEFT';

@@ -1,11 +1,11 @@
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 import {
     extractNumbers,
     parseAsIntArray,
     parseAsIntGrid,
     parseAsOneStrArray,
     parseAsStrGrid,
-} from '$src/utils/parsing';
+} from '$src/lib/parsing';
 
 type Opcode = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
 type LiteralOperand = 0 | 1 | 2 | 3;

@@ -1,4 +1,4 @@
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 
 const part1 = (input: string): number => {
     let encodedMemory = input

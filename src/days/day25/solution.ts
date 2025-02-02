@@ -1,4 +1,4 @@
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 
 function zip<T, U>(arr1: T[], arr2: U[]): [T, U][] {
     const length = Math.min(arr1.length, arr2.length);

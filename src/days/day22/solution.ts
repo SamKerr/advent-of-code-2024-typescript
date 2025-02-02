@@ -1,5 +1,5 @@
 import { xor } from '$src/lib/ClassicalAlgorithms/Bitwise/bitwise';
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 
 const mix = (a: bigint, b: bigint) => a ^ b;
 const prune = (a: bigint): bigint => (a > 0n ? a : -a) % 16777216n;

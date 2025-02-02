@@ -5,7 +5,7 @@ import {
     positionIsWall,
     START,
 } from '$src/lib/ClassicalAlgorithms/GraphAlgortihms/Constants';
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 
 const posToKey = (pos: number[]) => JSON.stringify(pos);
 const keyToPos = (key: string) => JSON.parse(key);

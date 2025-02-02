@@ -1,11 +1,11 @@
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 import {
     extractNumbers,
     parseAsIntArray,
     parseAsIntGrid,
     parseAsOneStrArray,
     parseAsStrGrid,
-} from '$src/utils/parsing';
+} from '$src/lib/parsing';
 import * as fs from 'fs';
 
 type RobotDetails = {

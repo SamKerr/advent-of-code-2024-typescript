@@ -1,4 +1,4 @@
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 
 const blinkOnStone = (val: string): string[] => {
     if (val[0] === '0' && val.length > 1) {

@@ -1,5 +1,5 @@
-import { requestInput } from '$src/utils/http';
-import { extractNumbers } from '$src/utils/parsing';
+import { requestInput } from '$src/lib/http';
+import { extractNumbers } from '$src/lib/parsing';
 
 type Vec2D = number[];
 type Matrix2D = number[][];

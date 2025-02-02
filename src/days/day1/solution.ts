@@ -1,5 +1,5 @@
 import * as assert from 'assert';
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 
 
 function parseInput(input: string): [number[], number[]] {

@@ -1,14 +1,14 @@
 import { dfs } from '$src/lib/ClassicalAlgorithms/GraphAlgortihms/DFS';
 import { dijkstra } from '$src/lib/ClassicalAlgorithms/GraphAlgortihms/Dijkstra';
 import { Graph, GraphNode, KeyToNodeMap } from '$src/lib/DataStructures/Graph';
-import { requestInput } from '$src/utils/http';
+import { requestInput } from '$src/lib/http';
 import {
     extractNumbers,
     parseAsIntArray,
     parseAsIntGrid,
     parseAsOneStrArray,
     parseAsStrGrid,
-} from '$src/utils/parsing';
+} from '$src/lib/parsing';
 
 function part1(input: string): any {
     // input =
