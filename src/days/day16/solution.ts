@@ -7,7 +7,7 @@ import {
     WALL,
 } from '$src/lib/ClassicalAlgorithms/GraphAlgortihms/Constants';
 import { requestInput } from '$src/utils/http';
-import { PriorityQueue } from '../lib/DataStructures/PriorityQueue';
+import { PriorityQueue } from '../../lib/DataStructures/PriorityQueue';
 
 const directionToCost = {
     UP: { LEFT: 1000, RIGHT: 1000, DOWN: 2000, UP: 0 },

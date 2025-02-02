@@ -5,7 +5,7 @@
     "description": "Advent of Code 2024",
     "main": "index.js",
     "scripts": {
-        "operation-save-christmas": "tsx src/day$npm_config_path/solution.ts",
+        "operation-save-christmas": "tsx src/days/day$npm_config_path/solution.ts",
         "format": "prettier --write .",
         "format:check": "prettier --check ."
     },
